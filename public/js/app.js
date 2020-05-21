@@ -34,7 +34,8 @@ inputGroupSelect01.addEventListener("change",() => {
             let att = document.createAttribute("class");
             att.value = "card-text";
             let texto = document.createElement("p");            
-            texto.textContent = `${property}: ${dato[property]}`;            
+            texto.textContent = `${property}: ${dato[property]}`; 
+            card.style.backgroundColor = `#${dato.cpkHexColor}`;           
             card.appendChild(texto);            
           }
 
